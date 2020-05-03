@@ -7,7 +7,7 @@ import Card from './Card'
 import GuessCount from './GuessCount'
 
 const SIDE = 6
-const SYMBOLS = '😀🎉💖🎩🐶🐱🦄🐬🌍🌛🌞💫🍎🍌🍓🍐🍟🍿'
+const SYMBOLS = '🐶🍌🍓🦊🐻🐰🐷🦉🦍🦔🐥🥭🍫🥑🍍🍹🥒🍣'
 
 class App extends Component {
   cards = this.generateCards()
