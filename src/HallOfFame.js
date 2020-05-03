@@ -3,9 +3,22 @@ import React from 'react'
 import './HallOfFame.css'
 
 const HallOfFame = ({ entries }) => (
-  <table className="hallOfFame">
-    <tbody>
-      <tr>FIXME</tr>
+    <table className="hallOfFame">
+        <thead>
+            <tr>
+                <td>Date</td>
+                <td>Guesses</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+        {entries.map(({ date, guesses, id, player }) => (
+            <tr key={id}>
+                <td className='date'>{date}</td>
+                <td className='guesses'>{guesses}</td>
+                <td className='player'>{player}</td>
+            </tr>
+        ))}
     </tbody>
   </table>
 )
