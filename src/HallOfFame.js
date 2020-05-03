@@ -3,8 +3,15 @@ import React from 'react'
 import './HallOfFame.css'
 
 const HallOfFame = ({ entries }) => (
-  <table className="hallOfFame">
-    <tbody>
+    <table className="hallOfFame">
+        <thead>
+            <tr>
+                <td>Date</td>
+                <td>Guesses</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
         {entries.map(({ date, guesses, id, player }) => (
             <tr key={id}>
                 <td className='date'>{date}</td>
