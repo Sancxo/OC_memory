@@ -23,7 +23,7 @@ const HallOfFame = ({ entries }) => (
   </table>
 )
 
-HallOfFame = {
+HallOfFame.propTypes = {
     entries: PropTypes.arrayOf(
         PropTypes.shape({
             date: PropTypes.string.isRequired,
